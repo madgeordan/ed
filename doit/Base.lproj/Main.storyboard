@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="b41-kH-R5E" id="5sg-8d-9lf"/>
+                        <segue destination="6C9-IZ-OVG" kind="show" id="6kc-EJ-9xe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,12 +54,42 @@
                     <view key="view" contentMode="scaleToFill" id="mvq-Lh-ZHR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-xe-Gk4">
+                                <rect key="frame" x="37" y="66" width="275" height="244"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="235"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7W-i7-Mt4">
+                                <rect key="frame" x="166" y="350" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="definition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-je-7ya">
+                                <rect key="frame" x="151.5" y="406" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="40" id="6qY-cQ-vsb"/>
+                            <constraint firstItem="cl2-je-7ya" firstAttribute="top" secondItem="P7W-i7-Mt4" secondAttribute="bottom" constant="35" id="CUA-NJ-dh9"/>
+                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" constant="-13" id="D4G-pk-mGd"/>
+                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="leading" secondItem="mvq-Lh-ZHR" secondAttribute="leadingMargin" constant="21" id="Kuc-ax-1Zn"/>
+                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="UMr-Rn-2GP"/>
+                            <constraint firstItem="cl2-je-7ya" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="YKX-0R-jKe"/>
+                            <constraint firstItem="uUV-TY-uIu" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="357" id="Zc0-R1-3jh"/>
+                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="top" secondItem="1WL-fh-GKq" secondAttribute="bottom" constant="46" id="tyy-yH-SPj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtR-qR-Pv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="123"/>
+            <point key="canvasLocation" x="928.79999999999995" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
