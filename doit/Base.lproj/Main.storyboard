@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="964" y="35.532233883058474"/>
         </scene>
-        <!--View Controller-->
+        <!--Show View Controller-->
         <scene sceneID="t34-4m-onW">
             <objects>
-                <viewController id="6C9-IZ-OVG" sceneMemberID="viewController">
+                <viewController id="6C9-IZ-OVG" customClass="ShowViewController" customModule="doit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1WL-fh-GKq"/>
                         <viewControllerLayoutGuide type="bottom" id="uUV-TY-uIu"/>
@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-xe-Gk4">
-                                <rect key="frame" x="37" y="66" width="275" height="244"/>
+                                <rect key="frame" x="37" y="110" width="275" height="200"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="235"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

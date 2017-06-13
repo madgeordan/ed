@@ -12,6 +12,7 @@
 		A25F76BF1EEFC5850097A687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25F76BD1EEFC5850097A687 /* Main.storyboard */; };
 		A25F76C11EEFC5850097A687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25F76C01EEFC5850097A687 /* Assets.xcassets */; };
 		A25F76C41EEFC5850097A687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25F76C21EEFC5850097A687 /* LaunchScreen.storyboard */; };
+		A2EC68771EEFDEAD002B9835 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68761EEFDEAD002B9835 /* ShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A25F76C01EEFC5850097A687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25F76C31EEFC5850097A687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25F76C51EEFC5850097A687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EC68761EEFDEAD002B9835 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A25F76B91EEFC5850097A687 /* AppDelegate.swift */,
 				A25F76BB1EEFC5850097A687 /* ViewController.swift */,
+				A2EC68761EEFDEAD002B9835 /* ShowViewController.swift */,
 				A25F76BD1EEFC5850097A687 /* Main.storyboard */,
 				A25F76C01EEFC5850097A687 /* Assets.xcassets */,
 				A25F76C21EEFC5850097A687 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				A25F76BC1EEFC5850097A687 /* ViewController.swift in Sources */,
 				A25F76BA1EEFC5850097A687 /* AppDelegate.swift in Sources */,
+				A2EC68771EEFDEAD002B9835 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				A25F76CA1EEFC5850097A687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
