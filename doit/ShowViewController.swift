@@ -10,11 +10,16 @@ import UIKit
 
 class ShowViewController: UIViewController {
 
+    
+    @IBOutlet weak var chosenEmoji: UILabel!
+    @IBOutlet weak var followedName: UILabel!
+    @IBOutlet weak var followedDefinition: UILabel!
+    
     var emoji = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+chosenEmoji.text = emoji
     }
     
 }

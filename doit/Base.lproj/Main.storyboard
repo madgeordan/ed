@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,37 +53,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-xe-Gk4">
-                                <rect key="frame" x="37" y="110" width="275" height="200"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="235"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7W-i7-Mt4">
                                 <rect key="frame" x="166" y="350" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="definition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-je-7ya">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="definition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-je-7ya">
                                 <rect key="frame" x="151.5" y="406" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🤡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-xe-Gk4">
+                                <rect key="frame" x="50" y="94" width="274" height="229"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="235"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="40" id="6qY-cQ-vsb"/>
-                            <constraint firstItem="cl2-je-7ya" firstAttribute="top" secondItem="P7W-i7-Mt4" secondAttribute="bottom" constant="35" id="CUA-NJ-dh9"/>
-                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" constant="-13" id="D4G-pk-mGd"/>
-                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="leading" secondItem="mvq-Lh-ZHR" secondAttribute="leadingMargin" constant="21" id="Kuc-ax-1Zn"/>
-                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="UMr-Rn-2GP"/>
-                            <constraint firstItem="cl2-je-7ya" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="YKX-0R-jKe"/>
-                            <constraint firstItem="uUV-TY-uIu" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="357" id="Zc0-R1-3jh"/>
-                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="top" secondItem="1WL-fh-GKq" secondAttribute="bottom" constant="46" id="tyy-yH-SPj"/>
+                            <constraint firstItem="uUV-TY-uIu" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="344" id="Igh-TR-WHo"/>
+                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="top" secondItem="xPK-xe-Gk4" secondAttribute="bottom" constant="27" id="S35-FC-ql8"/>
+                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="top" secondItem="1WL-fh-GKq" secondAttribute="bottom" constant="30" id="VL6-E7-gZS"/>
+                            <constraint firstItem="P7W-i7-Mt4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="aF3-40-sGA"/>
+                            <constraint firstItem="cl2-je-7ya" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="jCL-UY-ncY"/>
+                            <constraint firstItem="xPK-xe-Gk4" firstAttribute="centerX" secondItem="mvq-Lh-ZHR" secondAttribute="centerX" id="sL6-r0-qPV"/>
+                            <constraint firstItem="cl2-je-7ya" firstAttribute="top" secondItem="P7W-i7-Mt4" secondAttribute="bottom" constant="35" id="str-Hm-cep"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chosenEmoji" destination="xPK-xe-Gk4" id="Smy-Dj-e0Y"/>
+                        <outlet property="followedDefinition" destination="cl2-je-7ya" id="AOV-YR-fQt"/>
+                        <outlet property="followedName" destination="P7W-i7-Mt4" id="DbA-5d-VQf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtR-qR-Pv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
