@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A5V-75-kAo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--emojidictionary-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="doit" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,26 +22,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b41-kH-R5E">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b41-kH-R5E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="b41-kH-R5E" secondAttribute="trailing" id="EvQ-e3-85n"/>
-                            <constraint firstItem="b41-kH-R5E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IuG-en-zGH"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b41-kH-R5E" secondAttribute="bottom" id="J8H-r8-Bab"/>
-                            <constraint firstItem="b41-kH-R5E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YkA-RA-2Sx"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="emojidictionary" id="3FW-9U-L0y">
+                        <barButtonItem key="backBarButtonItem" title="emojis" id="tPk-Vl-ojS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="b41-kH-R5E" id="5sg-8d-9lf"/>
-                        <segue destination="6C9-IZ-OVG" kind="show" id="6kc-EJ-9xe"/>
+                        <segue destination="6C9-IZ-OVG" kind="show" identifier="segue" id="Rf8-Qm-3fq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="964" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t34-4m-onW">
@@ -89,7 +88,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtR-qR-Pv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1760.8" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5L8-4W-8GF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A5V-75-kAo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I4L-Cq-n1o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FX0-lp-GI2">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ajq-NO-FDn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLZ-cu-BX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="36"/>
         </scene>
     </scenes>
 </document>
