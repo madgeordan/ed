@@ -9,7 +9,7 @@
 import UIKit
 
 class ShowViewController: UIViewController {
-
+    
     
     @IBOutlet weak var chosenEmoji: UILabel!
     @IBOutlet weak var followedName: UILabel!
@@ -19,7 +19,24 @@ class ShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-chosenEmoji.text = emoji
+        chosenEmoji.text = emoji
+        if chosenEmoji.text == "😇" {
+            followedName.text = "1"
+        }
+        if chosenEmoji.text == "😁" {
+            followedName.text = "2"
+        }
+        if chosenEmoji.text == "🤡" {
+            followedName.text = "3"
+        }
+        if chosenEmoji.text == "🤠" {
+            followedName.text = "4"
+        }
+        if chosenEmoji.text == "😡" {
+            followedName.text = "5"
+            
+        }
+        
     }
     
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     let emojis = ["😇", "😁", "🤡", "🤠", "😡"]
@@ -31,6 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let emoji = emojis[indexPath.row]
         performSegue(withIdentifier: "segue", sender: emoji)
     }
@@ -39,5 +40,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let show = segue.destination as! ShowViewController
         show.emoji = sender as! String
     }
+    
 }
-
